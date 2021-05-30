@@ -1,0 +1,19 @@
+文件夹结构：
+bf-->
+    |-->my-bf.cpp      本实验的代码。
+    |-->opencv-bf.cpp  调用opencv的bf函数，用于跟自己的实验做结果对比。
+    |-->my-bf          由my-bf.ccp编译的程序。
+    |-->opencv-bf      由opencv-bf.cpp编译的程序。
+    |-->说明文档.txt     说明文档
+    |-->图片            不带前缀的图片为原图，有前缀（如s10c30）的为在sigma(space)=10,sigma(color)=30下处理后的图片。
+
+
+编译说明：
+操作系统：linux
+编译器：g++
+依赖环境：opencv库
+linux系统下编译命令为：g++ my-bf.cpp -o my-bf `pkg-config --cflags --libs opencv` （注：opencv-bf也是一样编译）
+
+运行说明：
+例如：./my-bf
+按提示输入，输出带前缀的结果。
